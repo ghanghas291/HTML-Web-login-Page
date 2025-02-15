@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Form</title>
+<style>
+table
+{
+background:lightgreen;
+border: 1px red;
+border-collapse:collapse;
+width:500;
+}
+h4
+{
+color:red;
+}
+button
+{
+background-color:orange;
+}
+.submit
+{border-radius:10px 10px 10px 10px;
+color:white;background-color:db905f;width:100; height:30;}
+</style>
+</head>
+<body><center>
+<table border=1>
+<tr>
+<td>
+<form action="/action_page.php">
+<center><h4>Sign Up</h4>
+Name : <input type="text" name="name" size=10><br><br>
+Password : <input type="password" name="password" size=13 ><br><br>
+Email id : <input type="email" name="email" size=16><br><br>
+Gender :
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female<br><br>
+Contact# : <input type="phone" name="contact" maxlength="10" size=15><br>
+<center><h4>Eduactional Qualification</h4></center>
+Degree :
+<select>
+<option>-- Select Group ---</option>
+<option>PGDCA</option>
+<option>DCA</option>
+<option>FCCB</option>
+</select><br><br>
+Enginerring :
+<select>
+<option>-- Select Group ---</option>
+<option>Civil</option>
+<option>Electric</option>
+<option>Mechanical</option>
+</select><br><br>
+Hobbies : 
+<input type="radio" name="chess">Playing Chess
+<input type="radio" name="chess">Reading Books<br>
+<center><h4>Address</h4></center>
+<textarea rows=5 cols=30></textarea><br><br>
+Attach Resume : <input type="file" name="resume"><br><br>
+<input  type="submit"  class="submit" id="submit" value="Submit">
+</form>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
